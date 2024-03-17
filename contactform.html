@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <style>
+            .container{
+                background-color: beige;
+                width: 100%;                
+                background-size: 100vw 100vh;
+                color: green;
+                margin: auto;
+                padding-top: 2cm;
+                padding-bottom: 2cm;
+                font-family: 'Lucida handwriting';            
+                
+            }
+            .con1{    
+                background-color:bisque;
+                            
+                 border:5px solid rgba(255,255,255,.25);
+                  backdrop-filter: blur(16px);
+                  box-shadow: 0 0 10px 1px rgba(0,0,0,3);
+                  margin: auto;
+                  width:50%;
+                  height:auto;                                 
+                 
+            }
+            .error{
+                color:red;
+            }
+            .headd{                
+                font-family: 'Lucida handwriting';
+                
+                 }
+                 input[type="text"]{
+                    padding: 10px;
+                    line-height: 1.5;
+                    margin-bottom: 15;
+                    border: 1px solid #ccc;
+                    border-radius: 5;
+                    box-sizing: border-box;
+
+                 }
+                 input[type="tel"]{
+                    padding: 10px;
+                    line-height: 1.5;
+                    margin-bottom: 15;
+                    border: 1px solid #ccc;
+                    border-radius: 5;
+                    box-sizing: border-box;
+                 }
+                 input[type="email"]{
+                    padding: 10px;
+                    line-height: 1.5;
+                    margin-bottom: 15;
+                    border: 1px solid #ccc;
+                    border-radius: 5;
+                    box-sizing: border-box;
+                 }
+                 input[type="textarea"]{                    
+                    padding: 10px;
+                    line-height: 1.5;
+                    margin-bottom: 15;
+                    border: 1px solid #ccc;
+                    border-radius: 5;
+                    box-sizing: border-box;
+                    
+                 }
+                 input[type="submit"]{
+                    color: green;
+                    font-family: 'lucida handwriting';
+                    padding: 10px;
+                    line-height: 1.5;
+                    margin-bottom: 15;
+                    border: 1px solid #ccc;
+                    border-radius: 5;
+                    box-sizing: border-box;
+
+                 }
+                 input[type="text"]:hover{
+                    border: 2px solid green;
+                 }
+                 input[type="email"]:hover{
+                    border: 2px solid green;
+                 }
+                 input[type="tel"]:hover{
+                    border: 2px solid green;
+                 }
+
+                 input[type="textarea"]:hover{
+                   border: 2px solid green;
+                 }
+                 input[type="submit"]:hover{
+                    border:2px solid green;
+                 }
+                 #cc:hover{
+                    border: 2px solid green;
+                 }
+                 #cc{
+                    padding: 10px;
+                    line-height: 1.5;
+                    margin-bottom: 15;
+                    border: 1px solid #ccc;
+                    border-radius: 5;
+                 }
+                
+        </style>
+           </head>
+    <body class="container">     
+            <div class="con1" align="center">
+            <form action=""  >
+                <h1 class="headd" align="center">Contact Us</h1>
+
+                <label for="name">Name<sup class="ast">*</sup></label>
+                <input type="text" placeholder="enter your name" id="namme" required  required oninvalid="this.setCustomValidity('Please enter your name')"
+                oninput="this.setCustomValidity('')"><br>
+                
+                <label for="name">Phone number<sup class="ast">*</sup></label>
+                <select name="countrycode" id="cc" >
+                    <option>+91</option>
+                    <option>+93</option>
+                    <option value="">+355</option>
+                    <option value="">+376</option>
+                    <option value="">+672</option>
+                    <option value="">+213</option>
+                    <option value="">+43</option>
+                </select>
+                <input type="tel" placeholder="enter your phone number" id="phonne"  required  required oninvalid="this.setCustomValidity('Please enter your phone number')"
+                oninput="this.setCustomValidity('')" pattern="[1-9]{1}[0-9]{9}" ><br>
+               
+                <label for="name">email<sup class="ast">*</sup></label>
+                <input type="email" placeholder="enter your email address" id="emmail" required oninvalid="this.setCustomValidity('Please enter your email')"
+                 oninput="this.setCustomValidity('')" ><br>
+
+                <label for="name">Address<sup class="ast">*</sup></label>
+                <input type="textarea" placeholder="enter your address" id="addrress" required  required oninvalid="this.setCustomValidity('Please enter your address')"
+                oninput="this.setCustomValidity('')"><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>    
+      
+     </body>
+</html>
